@@ -1,4 +1,4 @@
-package com.bridgelabz.Sevices;
+package com.bridgelabz.services;
 
 import com.bridgelabz.model.User;
 

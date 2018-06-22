@@ -1,18 +1,18 @@
+
 package com.bridgelabz.controller;
 
-import com.bridgelabz.SeviceImplementation.DataBaseConnectionImpl;
-import com.bridgelabz.SeviceImplementation.ServiceImpl;
 import com.bridgelabz.registrationUtil.RegistrationUtility;
+import com.bridgelabz.serviceImplementation.DataBaseConnectionPstImpl;
+import com.bridgelabz.serviceImplementation.UserServiceImpl;
+import com.bridgelabz.services.DataBaseConnection;
+import com.bridgelabz.services.UserService;
 
 public class RegistrationController {
 
 	private static int option;
 	public static void main(String[] args) {
 		
-		ServiceImpl service = new ServiceImpl();
-		DataBaseConnectionImpl dataBase = new DataBaseConnectionImpl();
-		
-		dataBase.getConnection();
+		UserService service = new UserServiceImpl();
 		
 		System.out.println("        Welcome User !!!");
 		System.out.println("Enter Valid Option To Continue...");
@@ -30,7 +30,7 @@ public class RegistrationController {
 				break;
 			case 3:
 				System.out.println("             Exiting ...");
-				dataBase.closeConnection();
+				service.closeConnection();
 				System.out.println("All Connections Closed SuccessFully !");
 				break;
 			default:
