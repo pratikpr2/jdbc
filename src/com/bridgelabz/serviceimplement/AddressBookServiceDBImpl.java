@@ -251,5 +251,21 @@ public class AddressBookServiceDBImpl implements AddressBookService {
 			// TODO: handle exception
 		}
 	}
+	@Override
+	public void view() {
+		// TODO Auto-generated method stub
+		String strQuery = "show tables;";
+		try {
+			con = ds.getConnection();
+			Statement st = con.createStatement();
+			ResultSet rs = st.executeQuery(strQuery);
+			while(rs.next()) {
+				System.out.println(rs.getInt(1));
+			}
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
 
 }

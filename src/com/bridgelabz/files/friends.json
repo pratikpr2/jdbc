@@ -1,0 +1,20 @@
+[
+	{
+		"firstName": "pratik",
+		"lastName": "prakash",
+		"address": "bangalore",
+		"city": "bangalore",
+		"state": "karanataka",
+		"zip": "789990",
+		"phoneNumber": "8900000090"
+	},
+	{
+		"firstName": "dave",
+		"lastName": "mustaine",
+		"address": "lasvegas",
+		"city": "california",
+		"state": "newyork",
+		"zip": "123456",
+		"phoneNumber": "9900000090"
+	}
+]
